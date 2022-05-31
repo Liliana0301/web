@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side menu</title>
+    <link rel="stylesheet"  href="/css/menu.css">
+</head>
+<body>
+    <div id="sidemenu" class="menu-collapsed">
+        <!--header-->
+        <div id="header">
+            <div id="title"><span>IBROAD</span></div>
+            <div id="menu-btn">
+                <div id="btn-hamburger"></div>
+                <div id="btn-hamburger"></div>
+                <div id="btn-hamburger"></div>
+            </div>
+        </div>
+    
+    <!--profile-->
+    <div id="profile">
+        <div id="photo"><img src="/static/img/logo.JPG" alt=""></div>
+        <div id="name"><span>La ranchera</span></div>
+    </div>
+
+
+    <!--menu items-->
+    <div id="menu-items">
+        <div class="item">
+            <a href="#Acerca De">
+
+                <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+                <div class="icon"><img src="/static/img/home-alt-2-regular-24.png" alt="" ></div>
+                <div class="title"><span>Inicio</span></div>
+            </a>
+        </div>
+   
+
+        <!--primer boton del menu-->
+        <div class="item separador">
+            <a href="#">
+                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
+                <div class="title"><span>informacion</span></div>
+            </a>
+        </div>
+
+        <!--segundo boton del menu-->
+        <div class="item separador">
+            <a href="#">
+                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
+                <div class="title"><span>politica de privacidad</span></div>
+            </a>
+        </div>
+
+        <!--tercer boton del menu-->
+        <div class="item separador">
+            <a href="#">
+                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
+                <div class="title"><span>descarga la APP</span></div>
+            </a>
+        </div>
+
+        <!--cuarto boton del menu-->
+        <div class="item separador">
+            <a href="#">
+                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
+                <div class="title"><span>contactanos</span></div>
+            </a>
+        </div>
+
+        <!--quinto boton del menu-->
+        <div class="item separador">
+            <a href="#">
+                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
+                <div class="title"><span>opiniones</span></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const btn = document.querySelector('#menu-btn');
+    const menu = document.querySelecto('sidemenu');
+    btn.addEventListener('click' , e {
+        menu.classList.toggle("menu-expanded");
+        menu.classList.toggle("menu-collapsed");
+
+        document.querySelector('body').classList.toggle('body-expanded');
+
+    })
+</script>
+
+</body>
+</html> 

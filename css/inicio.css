@@ -1,0 +1,148 @@
+/*menu de la pagina*/
+
+/*descripcion de la pagina*/
+.descripsion{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: #db7c26; 
+    padding: 20px;
+    
+}
+.img1{
+    width: 3px;
+    padding: 3px;
+    height: 3px;
+}
+.descripsion2{
+    width: 60%;
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px 250px;
+}
+
+.descripsion ul{
+    list-style: none;
+}
+
+
+/*pie de pagina*/
+.pie_de_pagina{
+    width: 100%;
+    background-color: #212529; /*color de fondo del pie de pagina*/
+    font-family: cursive;
+   
+
+}
+.grupo-1{
+    width: 95%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    padding: 25px 30px;
+    text-align: center;
+	
+}
+
+.box{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+    
+a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color:white;
+}
+a:hover{
+    background-color: #343a40;
+    padding: 10px;
+    
+}
+figure {
+    display: flex;
+    width: 250px;
+} 
+
+
+.grupo-2{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    color: #faebd7;
+}
+
+
+/*slider de imagenes*/
+.slider{
+    width: 55%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/*scrol de los contenidos*/
+.apartados{
+    width: 100%;
+    background-color: aqua;
+    padding-top: 25px;
+    padding-bottom: 20%;
+   margin: 10px black;
+}
+
+.fuente{
+    margin: 3px;
+    font-size: 50px;
+    text-align: center;
+    color:#343a40;
+}
+.apartados p{
+    text-align: justify;
+    font-size: 30px;
+    padding: 30px 40px;
+    
+}
+
+.links{
+    color: red;
+    padding-right: 30%;
+}
+.color_de_fondo1{
+    background-color: #e76f51;
+    
+}
+.color_de_fondo2{
+    background-color: #bc6c25;
+    
+}
