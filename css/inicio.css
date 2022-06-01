@@ -1,18 +1,11 @@
-/*menu de la pagina*/
-
 /*descripcion de la pagina*/
-.descripsion{
+nav{
     width: 100%;
     margin: auto;
     display: flex;
-    background-color: #db7c26; 
-    padding: 20px;
-    
-}
-.img1{
-    width: 3px;
-    padding: 3px;
-    height: 3px;
+    background-color: #f3ebdd; 
+    padding: 15px;
+  
 }
 .descripsion2{
     width: 60%;
@@ -21,19 +14,35 @@
     padding: 10px 250px;
 }
 
-.descripsion ul{
+nav ul{
     list-style: none;
 }
+.descripsion{
+  background-color: #805a3b;
+  opacity: 0.1;
+  height:700px;
+  align-content: flex-start; 
+}
 
+/*imagen de la descripcion*/
+.img1{
+    width: 2px;
+    padding: 2px;
+    height: 2px;
+}
+
+/*menu de la pagina*/
+.menu-items{
+    position: static;
+}
 
 /*pie de pagina*/
 .pie_de_pagina{
     width: 100%;
     background-color: #212529; /*color de fondo del pie de pagina*/
     font-family: cursive;
-   
-
 }
+
 .grupo-1{
     width: 95%;
     max-width: 100%;
@@ -42,8 +51,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 70px;
     padding: 25px 30px;
-    text-align: center;
-	
+    text-align: center;	
 }
 
 .box{
@@ -57,16 +65,17 @@ a{
     font-size: 25px;
     color:white;
 }
+
 a:hover{
     background-color: #343a40;
     padding: 10px;
     
 }
+
 figure {
     display: flex;
     width: 250px;
 } 
-
 
 .grupo-2{
     text-align: center;
@@ -78,17 +87,20 @@ figure {
 
 
 /*slider de imagenes*/
+
 .slider{
-    width: 55%;
+    width: 40%;
     margin: auto;
     overflow: hidden;
 }
+
 .slider ul{
     padding: 0;
     display: flex;
     width: 400%;
     animation: cambio 20s infinite;
     animation-direction: alternate;
+    background:#7f4f24;
 }
 
 .slider li{
@@ -98,6 +110,7 @@ figure {
 .slider img{
     width: 100%;
 }
+
 @keyframes cambio{
     0%{ margin-left: 0;}
     20%{ margin-left: 0;}
@@ -112,14 +125,7 @@ figure {
     100%{margin-left: -300%;}
 }
 
-/*scrol de los contenidos*/
-.apartados{
-    width: 100%;
-    background-color: aqua;
-    padding-top: 25px;
-    padding-bottom: 20%;
-   margin: 10px black;
-}
+/*scrol de contenidos*/
 
 .fuente{
     margin: 3px;
@@ -138,11 +144,16 @@ figure {
     color: red;
     padding-right: 30%;
 }
-.color_de_fondo1{
-    background-color: #e76f51;
-    
+
+.apartado1{
+    background-color: #936639;
+    opacity: 0.5;
+    height: 850px;
+
 }
-.color_de_fondo2{
+
+.apartado2{
     background-color: #bc6c25;
-    
+    height: 850px;
 }
+
