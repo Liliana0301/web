@@ -1,3 +1,9 @@
+/**/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*descripcion de la pagina*/
 nav{
     width: 100%;
@@ -31,10 +37,73 @@ nav ul{
     height: 2px;
 }
 
-/*menu de la pagina*/
-.menu-items{
-    position: static;
+/*menu*/
+#btn-mas{
+    display: none;
 }
+.container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .icon-mas2{
+    display: block;
+    text-decoration: none;
+    background: #cc2b2b;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow:0px 1px 10px  rgb(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+
+.redes a:hover{
+    background: #fff;
+    color: #cc2b2b;
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*que se redusca a un solo boton
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*pie de pagina*/
 .pie_de_pagina{
