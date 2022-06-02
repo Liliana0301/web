@@ -45,6 +45,8 @@ nav ul{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    position:absolute; 
+    left:20px;
 }
 .redes a, .icon-mas2{
     display: block;
@@ -53,30 +55,39 @@ nav ul{
     color: #fff;
     width: 55px;
     height: 55px;
-    line-height: 55px;
+    line-height: 5px;
     text-align: center;
     border-radius: 50%;
     box-shadow:0px 1px 10px  rgb(0,0,0,0.4);
     transition: all 500ms ease;
+    font-size: 10px;
 }
 
 .redes a:hover{
     background: #fff;
     color: #cc2b2b;
 }
+/*que se redusca a un solo boton
 .redes a{
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
 }
 
-/*que se redusca a un solo boton
 #btn-mas:checked~ .redes a{
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible;
 }*/
-
+.icon-mas2{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas .icon-mas2{
+    transform: rotate(137deg);
+    font-size: 25px;
+}
 
 
 
