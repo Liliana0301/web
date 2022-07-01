@@ -7,78 +7,73 @@
     <title>Side menu</title>
     <link rel="stylesheet"  href="/static/css/menu.css">
 </head>
+
+
 <body>
-    <div id="sidemenu" class="menu-collapsed">
-        <!--header-->
-        <div id="header">
-            <div id="title"><span>IBROAD</span></div>
-            <div id="menu-btn">
-                <div id="btn-hamburger"></div>
-                <div id="btn-hamburger"></div>
-                <div id="btn-hamburger"></div>
-            </div>
-        </div>
+    <ul id="navigationMenu">
+        <li>
+            <a class="home" href="#">
+                <span>Home</span>
+            </a>
+        </li>
     
-    <!--profile-->
-    <div id="profile">
-        <div id="photo"><img src="/static/img/logo.JPG" alt=""></div>
-        <div id="name"><span>La ranchera</span></div>
+        <li>
+            <a class="about" href="#">
+                <span>About</span>
+            </a>
+        </li>
+    
+        <li>
+             <a class="services" href="#">
+                <span>Services</span>
+             </a>
+        </li>
+    
+        <li>
+            <a class="portfolio" href="#">
+                <span>Portfolio</span>
+            </a>
+        </li>
+    
+        <li>
+            <a class="contact" href="#">
+                <span>Contact us</span>
+            </a>
+        </li>
+    </ul>
+
+    <div id="container">
+        <ul>
+            <li>
+                <a href="#inicio">
+                <img src="/static/img/inicio.png" alt="logo" width="30px" height="30px" > Inicio
+                </a>
+            </li><br/>
+    
+            <li>
+                <a href="#Acerca De">Acerca De
+                    <img src="/static/img/inicio.png" alt="logo" width="30px" height="30px" >
+                </a></li>
+            <li>
+                <a href="#Politica">Politica de privacidad
+                    <img src="/static/img/politica de privacidad.png" alt="" width="30px" height="30px">
+                </a>
+            </li>
+    
+            <li>
+                <a href="#Contactanos">Contactanos
+                    <img src="/static/img/whatsapp-logo-24.png" alt="" width="30px" height="30px">
+                 </a></li>
+            <li>
+                <a href="#Descarga">Descarga nuestra app
+                    <img src="/static/img/descarga.png" alt="" width="30px" height="30px"> 
+                </a></li>
+            <li>
+                <a href="#">Deja tu comentario
+                    <img src="/static/img/comentario.png" alt="" width="30px" height="30px">
+                </a></li>
+        </ul>
     </div>
-
-
-    <!--menu items-->
-    <div id="menu-items">
-        <div class="item">
-            <a href="#Acerca De">
-
-                <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                <div class="icon"><img src="/static/img/home-alt-2-regular-24.png" alt="" ></div>
-                <div class="title"><span>Inicio</span></div>
-            </a>
-        </div>
-   
-
-        <!--primer boton del menu-->
-        <div class="item separador">
-            <a href="#">
-                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
-                <div class="title"><span>informacion</span></div>
-            </a>
-        </div>
-
-        <!--segundo boton del menu-->
-        <div class="item separador">
-            <a href="#">
-                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
-                <div class="title"><span>politica de privacidad</span></div>
-            </a>
-        </div>
-
-        <!--tercer boton del menu-->
-        <div class="item separador">
-            <a href="#">
-                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
-                <div class="title"><span>descarga la APP</span></div>
-            </a>
-        </div>
-
-        <!--cuarto boton del menu-->
-        <div class="item separador">
-            <a href="#">
-                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
-                <div class="title"><span>contactanos</span></div>
-            </a>
-        </div>
-
-        <!--quinto boton del menu-->
-        <div class="item separador">
-            <a href="#">
-                <div class="icon"><img src="/static/img/shield-solid-24.png" alt=""></div>
-                <div class="title"><span>opiniones</span></div>
-            </a>
-        </div>
-    </div>
-</div>
-
+    
 </body>
 </html> 

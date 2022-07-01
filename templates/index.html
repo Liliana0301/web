@@ -5,35 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Ranchera</title>
-    <link href="/static/css/inicio.css" rel="stylesheet"/>
+    <title>practicas de HTML, desde la escuela de HTML</title>
+    <link href="/static/css/practicas.css" rel="stylesheet"/>
 </head>
-
 
 <body>
 
 <!--descripcion de la pagina-->
-<nav  id="inicio">
-    <div class="img1">
-        <br/>
-        <img src="/static/img/logo.JPG"/>
+<br id="inicio"/>
+<header id="header">
+    <div>
+        <img src="/static/img/logo.JPG" class="logotipo">
     </div>
-    <div class="descripsion2">
+    <div class="desripcion">
         <ul>
-            <p><span style="color: #cdb4db; font-size: 50px; font-weight: bold; ">La Ranchera</span><p>
-            <li><span style="color:blueviolet ;">Genero:</span> Musica mexicana</li>
-            <li><span style="color:blueviolet;">Descripcion:</span>Estacion de radio de San Cristobal de las Casas Chiapas.</li>
+            <p><span style="color: #EABE3F; font-size: 40px; font-family: Times New Roman,'Georgia', Times, serif; font-weight: bold;">La Ranchera</span><p>
+            <li><span style="color:#fbfefb ;">Genero:</span> Musica mexicana</li>
+            <li><span style="color:#fbfefb;">Descripcion:</span>Estacion de radio de San Cristobal de las Casas Chiapas.</li>
         </ul>
     </div>
-</nav>
-    
-
+</header> 
 
 <!--sline de imagen de diferente manera-->
-<section class="descripsion">
-    <br/>
-    <br/>
-    <br/>
+<br/>
     <div class="slider">
         <ul>
             <li><img src="/static/img/slime 1.jpg" alt=""></li>
@@ -42,116 +36,110 @@
             <li><img src="/static/img/slime 4.jpg" alt=""></li>
         </ul>
     </div>
-</section>
+
 
 
 <!--codigo para los streaming de la radio, la misma que se utiliza al servidor-->
 <audio autoplay controls="controls"> <source src="https://radios.yanapak.org/radio_trama" type="audio/mpeg" /> </audio> 
 
-<!--links para redirecionar con el id-->
-        <div id="container">
-            <input type="checkbox" id="btn-mas">
 
-            <div class="redes">    
-                <a href="#inicio" class="icon-facebook">
-                    <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/inicio.png" alt="logo" width="40px" height="40px" >
-                    <span class="title">Inicio</span>
-                </a><br/>
+<!--menu-->
+<div id="menu">
+    <input type="checkbox" id="btn-mas"> 
 
-                <a href="#Acerca De" class="icon-youtube">
-                    <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/acerca de.png" alt="50px" width="40px" height="40px">
-                    <span class="title">Acerca De</span>
-                </a><br/>
+    <div >    
+        <a href="#inicio" class="icono">
+            <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+            <img src="/static/img/inicio.png" alt="inicio" class="img">
+        </a>
 
-                <a href="#Politica" class="icon-pajarito">
-                    <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/politica de privacidad.png" alt="" width="40px" height="40px">
-                    <span class="title">Politica de privacidad</span>
-                </a><br/>
+        <a href="#Acerca De" class="icono">
+            <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+            <img src="/static/img/acerca de.png" alt="acerca de" class="img">
+        </a>
 
-                <a href="#Contactanos" class="icon-pinterest">
-                    <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/whatsapp-logo-24.png" alt="" width="40px" height="40px">
-                    <span class="title">Contactanos</span>
-                </a><br/>
+        <a href="#Politica" class="icono">
+            <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+            <img src="/static/img/politica de privacidad.png" alt="politica de privacidad" class="img">
+        </a>
 
-                <a href="#Descarga" class="icon">
-                    <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/descarga.png" alt="" width="40px" height="40px">
-                    <span class="title">Descarga nuestra app</span>
-                </a><br/>
+        <a href="#Contactanos" class="icono">
+            <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+            <img src="/static/img/whatsapp-logo-24.png" alt="contactanos" class="img">
+        </a>
 
-                <a href="#" class="icon">
-                    <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/comentario.png" alt="" width="40px" height="40px">
-                    <span class="title">Deja tu comentario</span>
-                </a>
+        <a href="#Descarga" class="icono">
+            <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+            <img src="/static/img/descarga.png" alt="descarga nuestra app" class="img">
+        </a>
 
-                </div> 
-                <div class="btn-mas">
-                    <img src="/static/img/plus.png" class="icon-mas2">
-                </div>
-               
-        </div>
+        <a href="#" class="icono">
+            <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
+            <img src="/static/img/comentario.png" alt="deja tu comentario" class="img">
+        </a>
+</div>
+</div>
+
 
 <!--scrol de los contenidos-->
-<!--primer apartado con id-->
 
-    <div class="apartado1">
-    <h2 class="fuente" id="Acerca De">Acerca de nosotros</h2>
-        <p>Es una Estacion de radio de sancristobal de las casas chiapas, fue creado en el mism lugar
+    <!--primer apartado con id-->
+    <div class="caja">
+        <h2 class="titulo" id="Acerca De">Acerca de nosotros</h2>
+        <p class="texto">Es una Estacion de radio de sancristobal de las casas chiapas, fue creado en el mism lugar
             con la finalidad de brindar a los cuidadanos una pagina y una aplicacion en la que puedan disfrutar de sus musicas favoritas, la idea de este proyect fue brindado por
-        el ingeniero sergio alejadro diazz, director de la empresa IBROAD TECNOLOGIA</p> 
-    </div><br/>
+            el ingeniero sergio alejadro diaz, director de la empresa IBROAD TECNOLOGIA
+        </p> 
+    </div>
 
     <!--segundo apartado con id-->
-    <div class="apartado2">
-        <h2 class="fuente" id="Politica">Politica de privacidad</h2>
-        <p>dentro de este recuadro va a ir la politica de privacidad de la empresa </p> 
+    <div class="caja">
+        <h2 class="titulo" id="Politica">Politica de privacidad</h2>
+        <p class="texto">dentro de este recuadro va a ir la politica de privacidad de la empresa </p> 
     </div>
 
     <!--tercer apartado con id-->
-    <div class="apartado1" >
-        <h2 class="fuente" id="Contactanos">Contactanos</h2>
-        <p>Envia tu mensaje por wats</p> 
+    <div class="caja" >
+        <h2 class="titulo" id="Contactanos">Contactanos</h2>
+        <p class="texto">Envia tu mensaje por wats</p> 
     </div>
 
     <!--cuarto apartado con id-->
-    <div class="apartado2">
-        <h2 class="fuente" id="Descarga">Descarga nuestra APP</h2>
-        <p>dentro de este recuadro va a ir la politica de privacidad de la empresa </p> 
-    </div> <br/>
+    <div class="caja">
+        <h2 class="titulo" id="Descarga">Descarga nuestra APP</h2>
+        <p class="texto">dentro de este recuadro va a ir la politica de privacidad de la empresa </p> 
+    </div>
+    
 
-    <br>
     
-    
-    <!--pie de pagina-->
+  <!--pie de pagina-->
 <footer class="pie_de_pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <h2><a href="#">Acerca de nosotros</a></h2>
-                <h2><a href="#">Politica de privacidad</a></h2>
-            </div>
-
-            <div class="box">
-                <h2><a href="#">Contactanos</a></h2>
-                <h2><a href="#">Descarga nuestra app</a></h2>
-            </div>
-
-            <div >
-                <figure>
-                        <img src="/static/img/logo.JPG" alt="logotipo">
-                </figure>
-            </div>
+    <div class="grupo-1">
+        <div class="box"> 
+            <a href="#"> acerca de </a>
         </div>
-
+        <div class="box">  
+            <a href="#"> politica de privacidad </a>
+        </div>
+        <div class="box"> 
+            <a href="#"> contactanos </a>
+        </div>
+        <div class="box"> 
+            <a href="#"> descarga la app </a>
+        </div>
+    
+        <div>
+            <figure>
+                    <img src="/static/img/logo.JPG" alt="logotipo" >
+            </figure>
+        </div>
+    </div>
         <div class="grupo-2"><hr/>
-            <small>&copy; 2022 <b>la ranchera</b>- Todos los Derechos Reservados</small>
-
+                <small>&copy; 2022 <b>la ranchera</b>- Todos los Derechos Reservados</small>
+    
         </div>
-</footer>
+    </footer>
+    
 
 </body>
 </html>
