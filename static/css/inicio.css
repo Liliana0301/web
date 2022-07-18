@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("/static/img/fondo.jpg");
-    background-size:1280px  800px;
+    background-image: url("/static/img/fondo1.jpg");
+    background-size:1265px  610px;
     background-repeat:no-repeat;
     background-attachment: fixed;
     
@@ -14,7 +14,7 @@ body{
     width: 100%;
     height:150px;
     display: flex;
-    background-color: hsl(30, 51%, 80%, .4); 
+    background-color: hsl(0, 0%, 100%, .6); 
 }
 .logotipo{
     width: 135px;
@@ -28,12 +28,18 @@ body{
    text-align:left;
    font-size: 20px;
    list-style: none;
+   color:#0077b6;
 }
 .descripcion p{
     letter-spacing:3px;
     word-spacing:10px;
-    padding:0px 0px; 
-    
+    padding:0px 0px;
+}
+.contador{
+    width:150px;
+    margin-left:200px;
+    margin-top:40px;
+
 }
 
 /*slider de imagenes*/
@@ -71,16 +77,17 @@ body{
     100%{margin-left: -300%;}
 }
 
+
 /*menu*/
 #menu{
-    margin: 0;
+    margin: 20px 0px 20px 0px;
     padding: 0;
     width: 15%;
     height: 50%; 
     position: fixed; 
-    bottom: 30px;
+    bottom: 100px;
     right: 10px; 
-    left:40px;
+    left:30px;
 }
 
 #btn-mas{
@@ -88,90 +95,244 @@ body{
 }
 .icono{
     display: block;
-    background: hsl(40, 91%, 91%);
-    color: #582f0e;
+    background:white;
     margin: 5px;
     width: 43px;
     height: 43px;
     border-radius: 50%;
     text-align: center;
-}
-.icono a:hover{
-    background: #582f0e;
-    color: #a68a64;
-    border-radius: 50%; 
+    border: 1px solid #00aae4 ;
 }
 #menu .img{
     width: 40px;
     height: 40px;
 }
+.icono:hover{
+background-color: hsl(195, 100%, 45%, .3);
+}
+
+/*streaming*/
+#streaming{
+    width: 100%;
+    height:250px;
+    display: flex;
+    background-color: #f1faee; 
+    
+}
+
+#streaming .row{
+    display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;;
+    margin:0px 0px 0px 200px;
+    padding-top:40px;
+}
+ 
+#streaming, h2{
+    color: #00aae4;
+}
+#streaming .img{
+    height: 80px;
+    width: 80px;
+}
+
+
 
 /*scrol de contenidos*/
 .caja{
-    background: hsl(40, 91%, 91%, .4);
     text-align: justify;
-    width: 80%;
-    height: 550px;
+    width: 90%;
     font-size: 20px;
-    margin:10px 0px 10px 250px;
+    margin:10px 30px 10px 60px;
     border-radius: 15px;
 }   
-.titulo{
-    margin: 3px;
-    font-size: 50px;
-    text-align: center;
-    color: #c8553d;
+.color1{
+    background: hsl(105, 55%, 96%, .4);
 }
-.texto{
-    margin:40px 20px 0px 200px;
-    color: white;
+.color2{
+    background:white;
+}
+.titulo{
+    margin: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: black;/* #c8553d*/
+    background:  #00aae4;
+    border-radius: 15px;
+    padding:15px;
+    
+}
+.texto, .informacion{
+    margin:40px 0px 0px 80px;
+    color:black;
+    text-align: justify;
+    width:925px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.justificacion{
+    padding:30px;
+    
+}
+.informacion img{
+    height:60px;
+    width:60px;
+    margin:10px;
+}
+.alineacion{
+    display: flex;
+}
+/*mision y vision*/
+#mision{
+    width:auto;
+    background-color: hsl(0, 0%, 100%);
+    text-align: justify;
+}
+#vision{
+    margin-left:150px;
+    margin-right:150px;
+}
+.caja_mision{
+    width:45%;
+    background:hsl(195, 100%, 45%,.3);
+    display:inline-block;
+    margin:20px;
+    border-radius:25px;
+   }
+.informacion_mision{
+    padding:20px;
+    width:350px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*propiedades de la caja de comentarios*/
+.comentarios{
+    margin:20px 0px;
+}
+
+#formulario{
+    width: 100%;
+    height: 500px;
+    background-color:hsl(0, 0%, 100%, .4); 
+    
+}
+
+#formulario .datos{
+    background:hsl(0, 0%, 100%, .5);
+    width: 700px;
+    height:300px;
+    margin:20px 250px 20px 250px;
+    border-radius: 15px;
+}
+
+.p-data{
+    font-family: Arial, Helvetica, sans-serif;
+    width:80%;
+    font-size:18px;
+    margin-left:100px;
+    text-align: justify;
+}
+
+
+.form_comentarios textarea{
+    width:40%;
+    height: 84px;
+    max-width:100%;
+    min-width: 100%;
+    max-height: 380px;
+    min-height:200px;
+    padding:10px;
+    font-family:'roboto', sans-serif;
+    line-height:30px;
+    border:1px solid black;
+    margin-bottom:20px;
+
+}
+.form_comentarios .btn{
+    background: #0077b6;
+    font-family:'roboto', sans-serif;
+    border-radius: 0;
+    color:white;
+    margin-bottom: 20px; 
+}
+.form_comentarios .btn:hover{
+    box-shadow: 0px 0px 9px hsl(240, 100%, 50%);
+}
+.header, .cnt-header{
+    width:100%;
+    height:40px;
+    background:  hsl(201, 100%, 36%, .7);
+}
+.lbl-header{
+    font-family:cursive;
+    font-size: 20px;
+}
+.ctn-header{
+    width:100%;
+    height:30px;
+    text-align:center;
+    position:relative;
+    top:5px;
 }
 
 /*pie de pagina*/
 .pie_de_pagina{
     width: 100%;
-    background-color: #a68a64;
-    font-family: cursive;
+    background-color: hsl(0, 0%, 100%);
     display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .grupo-1{
-    width: 95%;
-    height: 80px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-    padding:10px 0px 0px 60px;
-    text-align: center;	
+    width: 80%;
+    height: 90px;
+    display:flex;
+    margin-left:150px;
 }
 .grupo-2{
-    text-align: center;
     font-size: 15px;
-    padding: 17px;
-    color: #fbfefb;
+    color: black;
+    padding: 20px;
 }
 
 .box{
-    margin: auto;
-    width:180px;
-    height:50px;  
+    width:160px;
+    height:40px; 
+    margin: 40px 30px 0px 30px;
 }
     
 a{
     font-size: 15px;
-    color:white;
+    color:black;
     text-decoration: none;
 }
 
 a:hover{
-    background-color: #582f0e;
+color:rgba(11, 173, 206, 0.938);
 }
 
 figure {
     margin: auto;
     width: 100px;
+    margin: 10px 10px 0px 10px;
 } 
-
+/*codigo del reproductor*/
+#thefile{
+    position:fixed;
+    top:10px;
+    left:10px;
+    z-index: 100;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:16px;
+    width: 50%;/*nombre de la cancion*/
+}
+#audio{
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    width: calc(50% - 20px);    
+}
 
 
