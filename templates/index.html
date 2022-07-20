@@ -4,6 +4,7 @@
     <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="shortcut icon" href="/static/img/logo.JPG" type="image/x-icon">
             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
             <title>La Ranchera</title>
             <link href="/static/css/inicio.css" rel="stylesheet"/>
@@ -16,7 +17,7 @@
     <body>
         <!--descripcion de la pagina-->
         <br id="inicio"/>
-        <header id="header">
+        <section id="header">
             <div>
                 <img src="/static/img/logo.JPG" class="logotipo">
             </div>
@@ -35,7 +36,7 @@
                 <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=3718"></a><br>
                 <a href='https://websmultimedia.com/contador-de-visitas-gratis'>Contador de visitas</a><br>
             </div>
-        </header> 
+        </section> 
 
         <!--sline de imagen de diferente manera-->
         <br/>
@@ -57,27 +58,27 @@
                 
                 <a href="#inicio" class="icono">
                     <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/inicio.png" alt="inicio" class="img">
+                    <img class="icon-menu" src="/static/img/inicio.png" alt="inicio" class="img">
                 </a>
 
                 <a href="#Acerca De" class="icono">
                     <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/acerca de.png" alt="acerca de" class="img">
+                    <img class="icon-menu" src="/static/img/acerca de.png" alt="acerca de" class="img">
                 </a>
 
                 <a href="#Politica" class="icono">
                     <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/politica de privacidad.png" alt="politica de privacidad" class="img">
+                    <img class="icon-menu" src="/static/img/politica de privacidad.png" alt="politica de privacidad" class="img">
                 </a>
 
                 <a href="#Descarga" class="icono">
                     <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/descarga.png" alt="descarga nuestra app" class="img">
+                    <img class="icon-menu" src="/static/img/descarga.png" alt="descarga nuestra app" class="img">
                 </a>
 
                 <a href="#formulario" class="icono">
                     <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
-                    <img src="/static/img/comentario.png" alt="deja tu comentario" class="img">
+                    <img class="icon-menu" src="/static/img/comentario.png" alt="deja tu comentario" class="img">
                 </a>
             </div>
         </div>
@@ -87,18 +88,18 @@
         <!--streaming-->
         <section id="streaming">
             <div class="row">
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium content-text">
                     <header>
-                        <h2>Disfruta de tu musica favorita</h2>
+                        <span class="music-text">Disfruta de tu musica favorita</span>
                     </header>
                 </div>
                 <div class="col-4 col-12-medium">
                         <!--codigo para los streaming de la radio, la misma que se utiliza al servidor-->
-                        <audio autoplay controls="controls"> <source src="https://radios.yanapak.org/radio_trama" type="audio/mpeg" /> </audio> 
+                        <audio class="music-controll" autoplay controls="controls"> <source src="https://radios.yanapak.org/radio_trama" type="audio/mpeg" /> </audio> 
                       
                 </div>
-                <div class="col-5 col-12-medium">
-                    <img src="/static/img/auriculares.png" class="img">
+                <div class="col-4 col-12-medium">
+                    <img class="auriculares" src="/static/img/auriculares.png" class="img">
                 </div>
 
             </div>
@@ -116,54 +117,52 @@
         <!--scrol de los contenidos-->
 
             <!--primer apartado con id-->
-            <div class="caja color1">
+            <div class="caja color1 texto">
                 <div class="justificacion">
                     <h2 class="titulo" id="Acerca De">ACERCA DE NOSOTROS</h2>
-                    <p class="texto">Porque la musica regional mexicana es parte del arte que se refleja hoy en la sociedad, hemos creado un espacio en donde puedas disfrutar de tus musicas 
+                    <p>Porque la musica regional mexicana es parte del arte que se refleja hoy en la sociedad, hemos creado un espacio en donde puedas disfrutar de tus musicas 
                         favoritas en cualquier momento y en cualquier lugar. LA RANCHERA es una estacion de radio que ofrece a nuestros usuarios musica regional mexicano, que se transmite desde Sancristobal de las Casas 
                         Chiapas. En donde puedes escuchar musica de forma gratuita y sin necesidad de registrarse, ahora tambien puedes disfrutar de sus musicas desde tu dispositivo movil descargando la APP "La Ranchera".
                         Puedes dejar tus comentarios y sugerencias para poder mejorar nuestros servicios.
-                        
                     </p> 
                 </div>
                 
-                
                 <div class="informacion">
                     <div class="alineacion">
-                        <img src="/static/img/ubicacion.png" >
-                        <p>Estamos ubicados en Diagonal Ramón Larrainzar No. 155 29240 San Cristóbal de Las Casas, Chiapas, Mexico</p>
+                        <img class="img-align" src="/static/img/ubicacion.png" >
+                        <p class="align-text">Estamos ubicados en Diagonal Ramón Larrainzar No. 155 29240 San Cristóbal de Las Casas, Chiapas, Mexico</p>
                     </div>
 
                     <div class="alineacion">
-                        <img src="/static/img/llamada-telefonica.png" >
-                        <p>967 678 8626</p>
+                        <img class="img-align" src="/static/img/llamada-telefonica.png" >
+                        <p class="align-text">967 678 8626</p>
                     </div>
 
                     <div class="alineacion">
-                        <img src="/static/img/facebook.png"><p>
+                        <img class="img-align" src="/static/img/facebook.png">
+                        <p class="align-text">
                         <a href="https://www.facebook.com/ibroad.ingenieriaenbroadcasting/">Ibroad Tecnología</a></p>
                     </div>
         
                     <div class="alineacion"> 
-                        <img src="/static/img/sitio web.png" >
-                        <p>
-                        <a href="https://www.cylex.mx/reviews/viewcompanywebsite.aspx?firmaName=ibroad+tecnologia&companyId=11960294">ww.ibroad.com</a></p>
+                        <img class="img-align" src="/static/img/sitio web.png" >
+                        <p class="align-text"><a href="https://www.cylex.mx/reviews/viewcompanywebsite.aspx?firmaName=ibroad+tecnologia&companyId=11960294">ww.ibroad.com</a></p>
                     </div>
-
                </div> 
             </div>
+
             <div id="mision">
                 <div id="vision">
-                <div class="caja_mision">
-                    <h4 class="titulo">Mision</h4>
-                    <p class="informacion_mision">Ser el medio de comunicacion que ofrece contenidos de altos estandares de calidad a través de la estacion de radio, 
-                        superando constantemente las expectativas de nuestra audiencia. </p>
-                </div>
-                <div class="caja_mision">
-                    <h4 class="titulo">Vision</h4>
-                    <p class="informacion_mision">Constituirse en la mejor opción de radiocomunicacion, tanto por su cobertura como por la preferencia del auditorio. 
-                        asi como ser un sistema reconocido, que promueva la calidad de nuestro servicio radiofónico</p>
-                </div>
+                    <div class="caja_mision">
+                        <h4 class="titulo">Mision</h4>
+                        <p class="informacion_mision">Ser el medio de comunicacion que ofrece contenidos de altos estandares de calidad a través de la estacion de radio, 
+                            superando constantemente las expectativas de nuestra audiencia. </p>
+                    </div>
+                    <div class="caja_mision">
+                        <h4 class="titulo">Vision</h4>
+                        <p class="informacion_mision">Constituirse en la mejor opción de radiocomunicacion, tanto por su cobertura como por la preferencia del auditorio. 
+                            asi como ser un sistema reconocido, que promueva la calidad de nuestro servicio radiofónico</p>
+                    </div>
                 </div>
             </div>
 
