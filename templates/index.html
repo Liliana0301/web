@@ -33,9 +33,11 @@
         <div class="contador">
             <a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas">
                 <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=3718"></a><br>
-                <a href='https://websmultimedia.com/contador-de-visitas-gratis'>Contador de visitas</a><br>
+                <a href='https://websmultimedia.com/contador-de-visitas-gratis'></a><br>
+                <p>Contador de visitas</p>
             </div>
         </header> 
+         <!-- Fin Contador de visitas -->
 
         <!--sline de imagen de diferente manera-->
         <br/>
@@ -75,14 +77,13 @@
                     <img src="/static/img/descarga.png" alt="descarga nuestra app" class="img">
                 </a>
 
-                <a href="#formulario" class="icono">
+                <a href="#comentario" class="icono">
                     <!--en cada imagen se va a direccionar los links para asi poder dirigirnos a los apartados de la pagina web-->
                     <img src="/static/img/comentario.png" alt="deja tu comentario" class="img">
                 </a>
             </div>
         </div>
-        
-    <!-- Fin Contador de visitas -->
+    
     
         <!--streaming-->
         <section id="streaming">
@@ -120,15 +121,15 @@
                 <div class="justificacion">
                     <h2 class="titulo" id="Acerca De">ACERCA DE NOSOTROS</h2>
                     <p class="texto">Porque la musica regional mexicana es parte del arte que se refleja hoy en la sociedad, hemos creado un espacio en donde puedas disfrutar de tus musicas 
-                        favoritas en cualquier momento y en cualquier lugar. LA RANCHERA es una estacion de radio que ofrece a nuestros usuarios musica regional mexicano, que se transmite desde Sancristobal de las Casas 
-                        Chiapas. En donde puedes escuchar musica de forma gratuita y sin necesidad de registrarse, ahora tambien puedes disfrutar de sus musicas desde tu dispositivo movil descargando la APP "La Ranchera".
+                        favoritas en cualquier momento y en cualquier lugar. LA RANCHERA 95.9 FM es una estacion de radio que ofrece a nuestros usuarios musica regional mexicano, se transmite desde San Cristobal de las Casas,
+                        Chiapas, Mexico. En donde puedes escuchar musica de forma gratuita y sin necesidad de registrarse, ahora tambien puedes disfrutar de sus musicas desde tu dispositivo movil descargando la APP "La Ranchera".
                         Puedes dejar tus comentarios y sugerencias para poder mejorar nuestros servicios.
                         
                     </p> 
                 </div>
                 
                 
-                <div class="informacion">
+                <div id="Contactanos" class="informacion">
                     <div class="alineacion">
                         <img src="/static/img/ubicacion.png" >
                         <p>Estamos ubicados en Diagonal Ramón Larrainzar No. 155 29240 San Cristóbal de Las Casas, Chiapas, Mexico</p>
@@ -152,19 +153,20 @@
 
                </div> 
             </div>
-            <div id="mision">
-                <div id="vision">
-                <div class="caja_mision">
-                    <h4 class="titulo">Mision</h4>
-                    <p class="informacion_mision">Ser el medio de comunicacion que ofrece contenidos de altos estandares de calidad a través de la estacion de radio, 
-                        superando constantemente las expectativas de nuestra audiencia. </p>
-                </div>
-                <div class="caja_mision">
-                    <h4 class="titulo">Vision</h4>
-                    <p class="informacion_mision">Constituirse en la mejor opción de radiocomunicacion, tanto por su cobertura como por la preferencia del auditorio. 
-                        asi como ser un sistema reconocido, que promueva la calidad de nuestro servicio radiofónico</p>
-                </div>
-                </div>
+            <!--mision y vision-->
+            <div id="fondo">
+                <div id="caja_margen">
+                    <div class="caja_mision">
+                        <h4 class="titulo">Mision</h4>
+                        <p class="informacion_mision">Ser el medio de comunicacion que ofrece contenidos de altos estandares de calidad a través de la estacion de radio, 
+                            superando constantemente las expectativas de nuestra audiencia. </p>
+                    </div>
+                    <div class="caja_mision">
+                        <h4 class="titulo">Vision</h4>
+                        <p class="informacion_mision">Constituirse en la mejor opción de radiocomunicacion, tanto por su cobertura como por la preferencia del auditorio. 
+                            asi como ser un sistema reconocido, que promueva la calidad de nuestro servicio radiofónico</p>
+                    </div>
+              </div>
             </div>
 
             <!--segundo apartado con id-->
@@ -172,7 +174,7 @@
                 <div class="justificacion">
                     <h2 class="titulo" id="Politica">AVISO DE PRIVACIDAD</h2>
                     <p class="texto">De conformidad con las disposiciones de la Ley  General de Protección de Datos Personales en Posesión de Sujetos Obligados,
-                        La estacion de radio "La Ranchera" 95.9 FM pone a su disposición el siguiente aviso de privacidad.
+                        La estacion de radio La Ranchera 95.9 FM pone a su disposición el siguiente aviso de privacidad.
                         <br/><br/>
                         Respecto del tratamiento y protección de los datos de carácter personal de los usuarios que puedan ser recabados por la navegación del 
                         sitio Web www.. 
@@ -213,57 +215,65 @@
                 </div>
             </div>
             
-
             <!--crear una caja de comentario-->
-            <section id="formulario" class="wrapper style2 special fade" method="post">
-                <header class="header">
-                    <div class="ctn-header">
-                        <label class="lbl-header"> Deja tu comentario</label>
-                    </div>
-                </header>
-               
-                <div class="container">
-                    <div class="form_comentarios justify-content-center">
-                        <p class="p-data">Sea el primero en escribir una opinio sobre La Ranchera.<br><br>
-                            Los comentarios ingresados seran visibles para todas aquellas personas que visiten la pagina. Es por eso que no es buena idea incluir 
-                            tu informacion personal.
-                             Queremos que se proteja su privacidad y seguridad</p>
-                        <div class="col-6">
-                            <form action="" class="form_comentarios d-flex justify-content-end flex-wrap">
-                                <textarea name="comentario" id="" placeholder="comentar"></textarea>
-                                <button class="btn" type="button">publicar</button>
-                            </form>
-                        </div>
-                    </div> 
-                </div>
-            </section><br>
+                <section id="comentario">
+                    
+                    <header class="header">
+                            <div class="ctn-header">
+                                <label class="lbl-header"> Deja tu comentario</label>
+                            </div>
+                    
+                    
+                            <div class="container">
+                                <div class="form_comentarios">
+                                    <p class="datos">Sea el primero en escribir una opinio sobre La Ranchera.<br><br>
+                                        Los comentarios ingresados seran visibles para todas aquellas personas que visiten la pagina. 
+                                        Es por eso que no es buena idea incluir 
+                                        tu informacion personal.
+                                        Queremos que se proteja su privacidad y seguridad</p>
+                                
+                                </div> 
+                            </div>
+                        </header>
+                        <div class="caja_comentario">
+                            <script  src = " https://utteranc.es/client.js "
+                            repo = "Liliana0301/comentarios-web" 
+                            issue-term = "pathname" 
+                            theme = "github-light" 
+                            crossorigin = "anonymous" 
+                            async>
+                            </script> 
+                        </div> 
+             
+                </section>
 
-        <!--pie de pagina-->
-        <footer class="pie_de_pagina">
-            <div class="grupo-1">
-                    <div class="box"> 
-                        <a href="#Acerca de"> Acerca de </a>
-                    </div>
-                    <div class="box">  
-                        <a href="#politica de privacidad"> Politica de privacidad </a>
-                    </div>
-                    <div class="box"> 
-                        <a href="#contactanos">Contactanos </a>
-                    </div>
-                    <div class="box"> 
-                        <a href="#descarga la app"> Descarga la app </a>
-                    </div>
-                
-                    <div>
-                        <figure>
-                                <img src="/static/img/logo.JPG" alt="logotipo" >
-                        </figure>
-                    </div>
-            </div>
-                    <div class="grupo-2"><hr/>
-                            <small>&copy; 2022 <b>La Ranchera</b>- Todos los Derechos Reservados</small>
-                
-                    </div>
+
+            <!--pie de pagina-->
+            <footer class="pie_de_pagina">
+                <div class="grupo-1">
+                        <div class="box"> 
+                            <a href="#Acerca De"> Acerca de Nosotros</a>
+                        </div>
+                        <div class="box">  
+                            <a href="#Politica"> Aviso de Privacidad </a>
+                        </div>
+                        <div class="box"> 
+                            <a href="#Contactanos">Contactanos </a>
+                        </div>
+                        <div class="box"> 
+                            <a href="#Descarga"> Descarga la APP </a>
+                        </div>
+
+                        <div>
+                            <figure>
+                                    <img src="/static/img/logo.JPG" alt="logotipo" >
+                            </figure>
+                        </div>
+                </div>
+
+                        <div class="grupo-2"><hr/>
+                                <small>&copy; 2022 <b>La Ranchera</b>- Todos los Derechos Reservados</small>
+                        </div>
             </footer>
         
         <script src="/static/js/jquery-3.2.1.min.js"></script>
@@ -271,6 +281,4 @@
         <script src="/static/js/reproductor.js"></script>
 
     </body> 
-   
-
 </html>
