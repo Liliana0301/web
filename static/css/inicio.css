@@ -71,8 +71,7 @@ body{
 }
 .movimientoimagen
 {
-    width: 50%;
-    margin-left: 340px;
+    text-align: center;
 
 }
 .slider img{
@@ -288,7 +287,6 @@ body{
 }
 .justificacion{
     padding:30px;
-    width: 100%;
     margin-top: 20px;
 }
 
@@ -404,7 +402,8 @@ body{
     line-height:30px;
     border:1px solid black;
     margin-bottom:20px;
-
+    /* position: relative; */
+    
 }
 .form_comentarios .btn{
     background: #0077b6;
@@ -498,4 +497,8 @@ figure {
     color: white;
 }
 
+.caja_comentario{
+    margin-top: 100px;
+    position: relative;
+}
 

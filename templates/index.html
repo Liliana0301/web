@@ -239,29 +239,34 @@
 
 
         <!--crear una caja de comentario-->
-        <section id="formulario" class="wrapper style2 special fade" method="post">
+        <section id="comentario">
+                    
             <header class="header">
                 <div class="ctn-header">
                     <label class="lbl-header"> Deja tu comentario</label>
                 </div>
-            </header>
-
-            <div class="container">
-                <div class="form_comentarios justify-content-center colorfooter">
-                    <p class="p-data">Sea el primero en escribir una opinio sobre La Ranchera.<br><br>
-                        Los comentarios ingresados seran visibles para todas aquellas personas que visiten la pagina. Es
-                        por eso que no es buena idea incluir
-                        tu informacion personal.
-                        Queremos que se proteja su privacidad y seguridad</p>
-                    <div class="col-6">
-                        <form action="" class="form_comentarios d-flex justify-content-end flex-wrap">
-                            <textarea name="comentario" id="" placeholder="comentar"></textarea>
-                            <button class="btn" type="button">publicar</button>
-                        </form>
-                    </div>
+                <div class="container">
+                    <div class="form_comentarios">
+                        <p class="datos">Sea el primero en escribir una opinio sobre La Ranchera.<br><br>
+                            Los comentarios ingresados seran visibles para todas aquellas personas que visiten la pagina. 
+                            Es por eso que no es buena idea incluir 
+                            tu informacion personal.
+                            Queremos que se proteja su privacidad y seguridad</p>
+                    
+                    </div> 
                 </div>
-            </div>
-        </section><br>
+            </header>
+            <div class="caja_comentario">
+                <script  src = " https://utteranc.es/client.js "
+                repo = "Liliana0301/comentarios-web" 
+                issue-term = "pathname" 
+                theme = "github-light" 
+                crossorigin = "anonymous" 
+                async>
+                </script> 
+            </div> 
+             
+        </section>
 
         <!--pie de pagina-->
         <footer class="pie_de_pagina">
