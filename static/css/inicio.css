@@ -1,11 +1,13 @@
 body{
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     box-sizing: border-box;
-    background-image: url("/static/img/fondo1.jpg");
+    /* background-image: url("/static/img/fondo1.jpg"); */
     background-size:100%;
+    background-color: red;
     background-repeat:no-repeat;
     background-attachment: fixed;   
+    width: 100%;
 }
 
 .music-controll{
@@ -44,8 +46,8 @@ body{
 }
 .contador{
     width:150px;
-    margin-left:200px;
-    margin-top:40px;
+    margin-left:1020px;
+    margin-top:0px;
 
 }
 
@@ -64,7 +66,14 @@ body{
 }
 .slider li, img{
     list-style: none;
-    width: 100%;
+    width: 50%;
+    margin-top: 57px;
+}
+.movimientoimagen
+{
+    width: 50%;
+    margin-left: 340px;
+
 }
 .slider img{
     width: 100%;
@@ -114,6 +123,7 @@ body{
 .icon-menu{
     display: block;
     margin: auto;
+    margin-top: 10px;
 }
 
 .icono:hover{
@@ -122,13 +132,16 @@ body{
 
 /*streaming*/
 #streaming{
-    width: 100%;
+    /* width: 100%; */
     height:250px;
     display: flex;
     background-color: #f1faee; 
     /* justify-content: center; */
     /* justify-items: center; */
     align-items: center;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-right: 120px;
     
 }
 
@@ -169,6 +182,7 @@ body{
     position: relative;
 }
 
+
 /*scrol de contenidos*/
 .caja{
     /* text-align: justify; */
@@ -180,7 +194,13 @@ body{
 }   
 .color1{
     background: hsl(105, 55%, 96%, .4);
-    width: 1810px;
+    /* width: 1810px; */
+}
+
+.descarganuestraapp
+{
+    background: hsl(105, 55%, 96%, .4);
+    width: 95%;
 }
 
 /*& Media query */
@@ -210,7 +230,7 @@ body{
         margin-left: 10px;
     }
     .contador{
-        width:150px;
+        width:100%; /* MODIFICADO*/
         margin-left:10px;
         margin-top:40px;
     }
@@ -237,14 +257,30 @@ body{
     margin: 40px;
     font-size: 30px;
     text-align: center;
-    color: black;/* #c8553d*/
-    background:  #00aae4;
+    color:red;
+    background:white;
     border-radius: 15px;
     padding:15px;    
 }
 
+.textoavisoprivacidad
+{
+    color: black;
+    text-align: justify;
+    width:85%;
+    margin-left: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.acercadenosotros
+{
+    color:whitesmoke;
+    text-align: justify;
+    width:87%;
+    margin-left: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .texto, .informacion{
-    color:black;
+    color:whitesmoke;
     text-align: justify;
     width:85%;
     margin-left: 100px;
@@ -252,7 +288,11 @@ body{
 }
 .justificacion{
     padding:30px;
+    width: 100%;
+    margin-top: 20px;
 }
+
+
 
 .informacion img{
     margin-top: -10px;
@@ -284,9 +324,16 @@ body{
     margin-right: 20px;
 }
 
+#centermision
+{
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-right: 120px;
+}
+
 /*mision y vision*/
 #mision{
-    width:auto;
     background-color: hsl(0, 0%, 100%);
     text-align: justify;
     
@@ -444,6 +491,11 @@ figure {
     bottom:10px;
     left:10px;
     width: calc(50% - 20px);    
+}
+
+.colorfooter
+{
+    color: white;
 }
 
 
