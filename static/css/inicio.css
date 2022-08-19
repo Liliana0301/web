@@ -2,12 +2,13 @@ body{
     /* margin: 0; */
     /* padding: 0; */
     box-sizing: border-box;
-    /* background-image: url("/static/img/fondo1.jpg"); */
-    background-size:100%;
+    background-image: url("/static/img/logotipo2.jpg"); 
+    background-size:70%;
     background-color: red;
     background-repeat:no-repeat;
     background-attachment: fixed;   
     width: 100%;
+    background-position: center;
 }
 
 .music-controll{
@@ -17,38 +18,25 @@ body{
 
 /*descripcion de la pagina*/
 #header{
-    width: 100%;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    background-color: hsl(0, 0%, 100%, .6); 
-}
-.logotipo{
-    width: 135px;
-    height: 135px;
-    padding:0px;
-    margin:5px 30px;
+    width: 1100px;
+    height:550px;
+    background-color: hsl(0, 0%, 100%, .4); 
+    margin-left: 10%;
+    margin-right:10%;
 }
 
-.descripcion, li{
-   margin: 0px;
-   text-align:left;
-   font-size: 20px;
-   list-style: none;
-   color:#0077b6;
-}
-.descripcion p{
-    letter-spacing:3px;
-    word-spacing:10px;
-    padding:0px 0px;
-}
 .contador{
-    width:150px;
-    margin-left:1020px;
+    width:200px;
+    margin-left:970px;
     margin-top:0px;
 
+}
+.paginainicial{
+    width:70%;
+    height: 90%;
+    background:hsl(0, 0%, 100%, .5);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*slider de imagenes*/
@@ -116,7 +104,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #00aae4 ;
+    border: 1px solid black ;
 }
 
 .icon-menu{
@@ -126,13 +114,13 @@ body{
 }
 
 .icono:hover{
-    background-color: hsl(195, 100%, 45%, .3);
+    background-color: red;
 }
 
 /*streaming*/
 #streaming{
-    /* width: 100%; */
-    height:250px;
+    width: 100%; 
+    height:200px;
     display: flex;
     background-color: #f1faee; 
     /* justify-content: center; */
@@ -167,7 +155,7 @@ body{
 }
  
 #streaming, h2{
-    color: #00aae4;
+    color: black;
 }
 #streaming .img{
     height: 80px;
@@ -256,7 +244,7 @@ body{
     margin: 40px;
     font-size: 30px;
     text-align: center;
-    color:red;
+    color: black;
     background:white;
     border-radius: 15px;
     padding:15px;    
@@ -272,14 +260,13 @@ body{
 }
 .acercadenosotros
 {
-    color:whitesmoke;
+    color:black;
     text-align: justify;
     width:87%;
-    margin-left: 100px;
+    margin-left: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .texto, .informacion{
-    color:whitesmoke;
     text-align: justify;
     width:85%;
     margin-left: 100px;
@@ -319,7 +306,8 @@ body{
 }
 
 .img-align{
-    margin-right: 20px;
+    margin: 10px;
+
 }
 
 #centermision
@@ -346,7 +334,7 @@ body{
 
 .caja_mision{
     width:45%;
-    background:hsl(195, 100%, 45%,.3);
+    background:red;
     display:inline-block;
     justify-content: center;
     align-items: center;
@@ -362,15 +350,12 @@ body{
 }
 
 /*propiedades de la caja de comentarios*/
-.comentarios{
-    margin:20px 0px;
-}
 
-#formulario{
+#comentario{
     width: 100%;
     height: 500px;
-    background-color:hsl(0, 0%, 100%, .4); 
-    
+    background-color:hsl(0, 0%, 100%, .9); 
+    margin:20px
 }
 
 #formulario .datos{
@@ -381,13 +366,13 @@ body{
     border-radius: 15px;
 }
 
-.p-data{
+/*.p-datos{
     font-family: Arial, Helvetica, sans-serif;
-    width:80%;
+    width:40%;
     font-size:18px;
-    margin-left:100px;
+    margin:600px;
     text-align: justify;
-}
+}*/
 
 
 .form_comentarios textarea{
@@ -418,7 +403,7 @@ body{
 .header, .cnt-header{
     width:100%;
     height:40px;
-    background:  hsl(201, 100%, 36%, .7);
+    background:  white;
 }
 .lbl-header{
     font-family:cursive;
